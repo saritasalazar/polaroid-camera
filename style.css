@@ -1,0 +1,249 @@
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+  min-width: 100%;
+  background-color: lightpink;
+}
+
+.header {
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 2%;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  color: hsl(330, 100%, 50%);
+}
+
+/* camera */
+
+.camera__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 350px;
+  width: 400px;
+}
+
+.camera__top {
+  display: flex;
+  border: 1px solid black;
+  border-bottom: none;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  height: 65%;
+  width: 95%;
+  background-color: #eaeaea;
+}
+
+.camera__top__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 27.5%;
+  height: 100%;
+}
+
+.camera__flash {
+  border: 2px solid black;
+  border-radius: 10%;
+  height: 55%;
+  width: 70%;
+  background-color: white;
+}
+
+.camera__button {
+  align-self: flex-start;
+  margin-left: 15%;
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 20%;
+  width: 45%;
+  background-color: red;
+}
+
+.camera__top__middle {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  height: 100%;
+}
+
+.camera__lens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin-top: 5px;
+  height: 75%;
+  width: 95%;
+  z-index: 1;
+  background-color: whitesmoke;
+}
+
+.camera__lens__inner {
+  border-radius: 50%;
+  height: 85%;
+  width: 85%;
+  z-index: 1;
+  background-color: black;
+}
+
+.rainbow__container {
+  display: flex;
+  position: absolute;
+  top: 49.5%;
+  border: 1px solid black;
+  height: 50%;
+  width: 25%;
+}
+
+.rainbow__red {
+  height: 100%;
+  width: 20%;
+  background-color: red;
+}
+
+.rainbow__orange {
+  height: 100%;
+  width: 20%;
+  background-color: orange;
+}
+.rainbow__yellow {
+  height: 100%;
+  width: 20%;
+  background-color: yellow;
+}
+.rainbow__green {
+  height: 100%;
+  width: 20%;
+  background-color: lightgreen;
+}
+
+.rainbow__blue {
+  height: 100%;
+  width: 20%;
+  background-color: lightskyblue;
+}
+
+.camera__top__right {
+  display: flex;
+  justify-content: center;
+  width: 27.5%;
+  height: 100%;
+}
+
+.camera__viewfinder {
+  border: 2px solid black;
+  border-radius: 25%;
+  margin-top: 10px;
+  height: 40%;
+  width: 80%;
+  background-color: black;
+}
+
+.camera__bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 35%;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #eaeaea;
+}
+
+.camera__slit {
+  border: 1px solid black;
+  height: 20%;
+  width: 85%;
+  background-color: black;
+  border-radius: 2%;
+}
+
+.camera__text {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+.camera__button:active {
+  background-color: #f00048;
+  -webkit-box-shadow: inset 0px 0px 5px blue;
+  -moz-box-shadow: inset 0px 0px 5px red;
+  box-shadow: inset 0px 0px 5px red;
+  outline: none;
+}
+
+/* flash */
+
+.camera__flashlight {
+  display: none;
+}
+
+.camera__flashlight--active {
+  position: absolute;
+  z-index: 100;
+  opacity: 60%;
+  background-color: papayawhip;
+  height: 120%;
+  width: 100vw;
+}
+
+/* polaroid picture */
+
+.picture__container {
+  display: flex;
+  position: relative;
+  width: 300px;
+}
+
+.polaroid {
+  opacity: 100%;
+}
+
+.polaroid--active {
+  z-index: 2;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  /* margin-top: 2%; */
+  margin-bottom: 5%;
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+  background-color: white;
+  animation: slide 2s linear;
+}
+
+.image {
+  height: 200px;
+  width: 80%;
+  margin-top: 10%;
+  background-color: black;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(-30%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
