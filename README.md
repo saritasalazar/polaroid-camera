@@ -1,4 +1,4 @@
 # Polaroid Camera Animation
 
-Built JavaScript and CSS.
+Built with JavaScript and CSS.
 
